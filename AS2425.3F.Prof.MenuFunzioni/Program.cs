@@ -24,11 +24,23 @@
                         MaggioreFraDueNumeri();
                         break;
                     case 2: // Dato un numero indicarne la radice quadrata
-                        RadiceQuadrata();
+
+                        Console.WriteLine("Inserisci il valore sui cui calcolare la radice quadrata");
+                        int numero1 = Convert.ToInt32(Console.ReadLine());
+
+                        double radice = RadiceQuadrata(numero1);
+
+                        Console.WriteLine($"Il risultato del calcolo della radice quadrata è {radice}");
+
+                        break;
+                    case 9:
+                        Console.WriteLine("Hai scelto di uscire.");
                         break;
                 }
 
             } while (scelta != 9);
+
+            Console.WriteLine("Programma terminato.");
         }
 
         /// <summary>
@@ -70,14 +82,9 @@
         /// <summary>
         /// Calcola la radice quadrata del numero indicato (intero)
         /// </summary>
-        static void RadiceQuadrata()
+        static double RadiceQuadrata(int numero)
         {
-            Console.WriteLine("Inserisci il valore sui cui calcolare la radice quadrata");
-            int numero1 = Convert.ToInt32(Console.ReadLine());
-
-            double radice = Math.Sqrt(numero1);
-
-            Console.WriteLine($"Il risultato del calcolo della radice quadrata di {numero1} è {radice}");
+            return Math.Sqrt(numero);
         }
 
     }
