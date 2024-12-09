@@ -66,5 +66,19 @@
             else
                 Console.WriteLine("numero2 è maggiore/uguale di numero1");
         }
+
+        /// <summary>
+        /// Calcola la radice quadrata del numero indicato (intero)
+        /// </summary>
+        static void RadiceQuadrata()
+        {
+            Console.WriteLine("Inserisci il valore sui cui calcolare la radice quadrata");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+
+            double radice = Math.Sqrt(numero1);
+
+            Console.WriteLine($"Il risultato del calcolo della radice quadrata di {numero1} è {radice}");
+        }
+
     }
 }
