@@ -54,7 +54,17 @@
         /// </summary>
         /// <returns></returns>
         static void MaggioreFraDueNumeri()
-        { 
+        {
+            Console.WriteLine("Inserisci il primo numero");
+            int numero1 = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Inserisci il secondo numero");
+            int numero2 = Convert.ToInt32(Console.ReadLine());
+
+            if (numero1 > numero2)
+                Console.WriteLine("numero1 è maggiore di numero2");
+            else
+                Console.WriteLine("numero2 è maggiore/uguale di numero1");
         }
     }
 }
